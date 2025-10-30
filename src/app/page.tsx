@@ -2,9 +2,12 @@ import Image from 'next/image';
 import Link from 'next/link';
 import {
   ArrowRight,
-  HeartHandshake,
-  Lightbulb,
   Quote,
+  Clock8,
+  Shield,
+  Users,
+  HandHeart,
+  Handshake
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -22,19 +25,14 @@ const heroImage = PlaceHolderImages.find((img) => img.id === 'hero-landing');
 
 const testimonials = [
   {
-    name: 'Sarah L.',
-    role: 'Family Member',
-    quote: "365 Care Solutions has been a blessing for our family. The compassionate and professional care they provide for my brother has made a world of difference. We've seen such a positive change in him.",
+    name: '',
+    role: '',
+    quote: "We as a family after lots of deliberations and heartache decided to place Daniel in supported accommodation with the support of 365. We had initial reservations such a momentous decision for any parents however Daniel is settled and happy. 365 have been amazing and we are happy to talk to any parents who are considering this option.",
   },
   {
-    name: 'John D.',
-    role: 'Client',
-    quote: "The support I receive is tailored to my needs, and the staff are always so understanding and patient. I feel more independent and confident than ever before. Thank you, 365 Care Solutions!",
-  },
-  {
-    name: 'Dr. Emily Carter',
-    role: 'Healthcare Professional',
-    quote: "I frequently refer individuals to 365 Care Solutions and am consistently impressed by their commitment to person-centered care. They are a reliable and high-quality provider in our community.",
+    name: '',
+    role: '',
+    quote: "We as a family were worried about Mary moving From Children to Adult Services and it was a long time before this placement was found. There were some teething problems which were expected but Mary is now thriving. We fully endorse 365 and feel privileged that this Service exists.",
   },
 ];
 
@@ -137,32 +135,68 @@ export default function Home() {
               />
             </div>
             <div>
-              <h2 className="text-3xl md:text-4xl font-bold font-headline">Our Commitment to Care</h2>
+              <h2 className="text-3xl md:text-4xl font-bold font-headline">Why Choose Us</h2>
               <p className="mt-4 text-lg text-muted-foreground">
-                At 365 Care Solutions, our mission is to deliver the highest standard of care with dignity and respect. We are dedicated to creating a safe, nurturing, and supportive environment where every individual can thrive.
+                We are proud of our proven track record in successfully supporting individuals who have experienced placement breakdowns or difficulties in other services. Our team understands the complexities behind challenging behaviours and is committed to finding positive person centred solutions by offering stability, empathy and bespoke support.
               </p>
-              <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-6">
-                <div className="flex items-start gap-4">
-                  <div className="bg-accent p-3 rounded-full">
-                    <HeartHandshake className="w-6 h-6 text-accent-foreground" />
-                  </div>
-                  <div>
-                    <h3 className="font-bold text-lg">Person-Centered</h3>
-                    <p className="text-muted-foreground text-sm">Our care plans are built around the individual, focusing on their unique needs, goals, and aspirations.</p>
-                  </div>
-                </div>
-                <div className="flex items-start gap-4">
-                  <div className="bg-accent p-3 rounded-full">
-                    <Lightbulb className="w-6 h-6 text-accent-foreground" />
-                  </div>
-                  <div>
-                    <h3 className="font-bold text-lg">Empowerment</h3>
-                    <p className="text-muted-foreground text-sm">We empower individuals by promoting independence, choice, and inclusion in all aspects of their lives.</p>
-                  </div>
-                </div>
+              <p className="mt-4 text-lg text-muted-foreground">
+                We have helped individuals rebuild confidence, develop life skills and achieve sustainable outcomes.
+              </p>
+              <p className="mt-4 text-lg text-muted-foreground">
+                We don't shy away from challenges we embrace them.
+              </p>
+            </div>
+          </div>
+          <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            <div className="flex items-start gap-4">
+              <div className="bg-accent p-3 rounded-full">
+                <HandHeart className="w-6 h-6 text-accent-foreground" />
+              </div>
+              <div>
+                <h3 className="font-bold text-lg">Person Centred Care</h3>
+                <p className="text-muted-foreground text-sm">Every support plan is designed around individual's needs and aspirations.</p>
+              </div>
+            </div>
+            <div className="flex items-start gap-4">
+              <div className="bg-accent p-3 rounded-full">
+                <Shield className="w-6 h-6 text-accent-foreground" />
+              </div>
+              <div>
+                <h3 className="font-bold text-lg">Safety and Comfort</h3>
+                <p className="text-muted-foreground text-sm">We ensure a secure and welcoming environment where service users can thrive.</p>
+              </div>
+            </div>
+            <div className="flex items-start gap-4">
+              <div className="bg-accent p-3 rounded-full">
+                <Users className="w-6 h-6 text-accent-foreground" />
+              </div>
+              <div>
+                <h3 className="font-bold text-lg">Experienced Team</h3>
+                <p className="text-muted-foreground text-sm">Our professional staff are highly trained in supported Living and committed to providing exceptional care.</p>
+              </div>
+            </div>
+            <div className="flex items-start gap-4">
+              <div className="bg-accent p-3 rounded-full">
+                <Clock8 className="w-6 h-6 text-accent-foreground" />
+              </div>
+              <div>
+                <h3 className="font-bold text-lg">24/7 Support</h3>
+                <p className="text-muted-foreground text-sm">Our services are available round the clock because care does not stop at 5PM.</p>
+              </div>
+            </div>
+            <div className="flex items-start gap-4">
+              <div className="bg-accent p-3 rounded-full">
+                <Handshake className="w-6 h-6 text-accent-foreground" />
+              </div>
+              <div>
+                <h3 className="font-bold text-lg">Community and Social Engagement</h3>
+                <p className="text-muted-foreground text-sm">We encourage participation in local activities, hobbies and social programs to promote well being and connection.</p>
               </div>
             </div>
           </div>
+          <p className="mt-8 text-lg text-muted-foreground font-bold">
+            At 365 Care solutions, we don't just provide support - we foster independence, confidence and a sense of belonging, helping our service users live life to the fullest.
+          </p>
         </div>
       </section>
       
@@ -184,7 +218,7 @@ export default function Home() {
           >
             <CarouselContent>
               {testimonials.map((testimonial, index) => (
-                <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
+                <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/2">
                   <div className="p-1 h-full">
                     <Card className="flex flex-col h-full shadow-md">
                       <CardContent className="p-6 flex-grow flex flex-col justify-between">

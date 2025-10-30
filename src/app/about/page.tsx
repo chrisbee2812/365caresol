@@ -42,18 +42,21 @@ export default function AboutPage() {
                 </div>
             </section>
 
-            {/* Mission & Story Section */}
+            {/* Mission & About Us Section */}
             <section className="py-16 md:py-24">
                 <div className="container mx-auto px-4">
                     <div className="grid md:grid-cols-5 gap-12 items-start">
                         <div className="md:col-span-3">
-                            <h2 className="text-3xl md:text-4xl font-bold font-headline">Our Story</h2>
+                            <h2 className="text-3xl md:text-4xl font-bold font-headline">About Us</h2>
                             <div className="mt-4 space-y-4 text-muted-foreground">
                                 <p>
-                                    Founded on the principle that everyone deserves to live a fulfilling and dignified life, 365 Care Solutions was established to provide a higher standard of support for individuals with complex needs. Our journey began with a small, dedicated team who saw a need for more personalized and compassionate care within the community.
+                                    Welcome to 365 Care Solutions ltd where everyday is an opportunity to make a difference. We are a specialist supported living services provider across London offering bespoke care and support for adults with learning disabilities, autism spectrum conditions, complex needs and behaviours that may challenge live independently and with dignity. 
                                 </p>
                                 <p>
-                                    From our humble beginnings, we have grown into a trusted provider, known for our unwavering commitment to our clients. We believe in building strong relationships based on trust and respect, working collaboratively to help individuals achieve their goals and live as independently as possible. Our story is one of continuous learning, adaptation, and a deep-seated passion for making a positive difference in people's lives, 365 days a year.
+                                    At 365 Care Solutions ltd we believe everyone deserves the right to live a full, meaningful life - one where choice, respect and independence are at the heart of everything we do. Our support is designed around each individual's strengths, preferences and aspirations, ensuring that every person we work with has the opportunity to thrive in their own home and community. 
+                                </p>
+                                <p>
+                                    Our approach is person centred : We tailor our support around each individual's unique goals, preferences and abilities. We set out to provide specialist care for Autistic Spectrum Disorder, Complex needs, behaviours that may challenge, learning disability and physical disability in a supported living environment with the emphasis on home from home and seamless transition. Whether its daily living assistance, community participation or support with education, we empower the people we support to take control of their lives.
                                 </p>
                             </div>
                         </div>
@@ -62,7 +65,7 @@ export default function AboutPage() {
                                 <CardContent className="p-8">
                                     <h3 className="text-2xl font-bold font-headline mb-4">Our Mission</h3>
                                     <p className="text-muted-foreground italic">
-                                        "To empower individuals with diverse needs to live rich and fulfilling lives by providing exceptional, person-centered care and support, grounded in compassion, respect, and integrity."
+                                        "To deliver high quality, bespoke supported living by creating safe, inclusive and nurturing environments where individuals are empowered to live fulfilling, independent lives with confidence and purpose."
                                     </p>
                                 </CardContent>
                             </Card>
@@ -94,8 +97,37 @@ export default function AboutPage() {
                 </div>
             </section>
 
-
             {/* Team Section */}
+            <section className="py-16 md:py-24">
+                <div className="container mx-auto px-4">
+                    <h2 className="text-3xl md:text-4xl font-bold font-headline">Our Team</h2>
+                    <div className="mt-4 space-y-4 text-muted-foreground">
+                        <p>
+                            Our team is made up of compassionate, trained professionals who are passionate about making a difference. We are a team made up of two registered mental health nurses, learning disability expertise, manager and support workers. Every member of our staff shares a commitment to delivering high quality person centred care that promotes growth, safety and independence.
+                        </p>
+                        <p>
+                            Our dedicated professionals brings compassion, skill and experience to every aspect of care. We work closely with families, local authorities and multidisciplinary professionals to ensure a consistent, holistic approach that puts the individual first. At 365 Care solutions ltd, we accept challenges as part of the job - approaching every situation with patience, understanding and a belief that progress is always possible.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            {/* Story Section */}
+            <section className="py-16 md:py-24 bg-card">
+                <div className="container mx-auto px-4">
+                    <h2 className="text-3xl md:text-4xl font-bold font-headline">Our Story</h2>
+                    <div className="mt-4 space-y-4 text-muted-foreground">
+                        <p>
+                            365 Care Solutions  was  founded with a simple belief - that everyone regardless of ability or need deserves to live a fulfilling life with dignity , respect and independence. 
+                        </p>
+                        <p>
+                            Our journey began when our founder, driven by years of experience in the health and social care sector recognised and  identified that certain individuals were domiciled in inappropriate settings and needs and lifestyles were not being met. The team knew more bespoke tailor made packages could be offered with an experienced team used to building relationships where  individuals could thrive. By involving families and all stakeholders every step of the way we knew we could reach new heights with even the most challenging individuals. And that has proved to be the case.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            {/* Management Team Section */}
             <section className="py-16 md:py-24">
                 <div className="container mx-auto px-4">
                     <div className="text-center mb-12">
