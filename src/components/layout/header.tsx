@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { BrainCircuit, Menu, X, Phone, Mail } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -41,18 +42,25 @@ export default function Header() {
             </div>
         </div>
       </div>
-      <div className="container mx-auto flex h-16 items-center justify-between px-4">
+      <div className="container mx-auto flex h-28 items-center justify-between px-4">
         <Link
           href="/"
           className="flex items-center gap-2 font-bold text-lg font-headline"
           onClick={() => setMobileMenuOpen(false)}
         >
-          <BrainCircuit className="h-6 w-6 text-primary" />
-          <span>365 Care Solutions</span>
+          {/* <BrainCircuit className="h-6 w-6 text-primary" />
+          <span>365 Care Solutions</span> */}
+          <Image
+            src="/365-header-logo.webp"
+            alt="365 Care Solutions Logo"
+            width={1400}
+            height={400}
+            className="object-contain h-20 w-auto rounded-2xl"
+          />
         </Link>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center gap-6 text-sm font-medium">
+        <nav className="hidden md:flex items-center gap-6 text-sm md:text-xl lg:text-3xl font-medium">
           {navLinks.map((link) => (
             <Link
               key={link.href}
