@@ -23,16 +23,14 @@ export default function AboutPage() {
         <div className="bg-background">
             {/* Hero Section */}
             <section className="relative h-[40vh] md:h-[50vh] w-full">
-                {heroImage && (
                     <Image
-                        src={heroImage.imageUrl}
-                        alt={heroImage.description}
+                        src="/pexels-cliff-booth-4057863.webp"
+                        alt="Downs syndrome person smiling whilst talking to caregiver"
                         fill
                         className="object-cover"
                         priority
-                        data-ai-hint={heroImage.imageHint}
+                        data-ai-hint="Downs syndrome person smiling whilst talking to caregiver"
                     />
-                )}
                 <div className="absolute inset-0 bg-black/60" />
                 <div className="relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-4">
                     <h1 className="text-4xl md:text-6xl font-bold font-headline tracking-tight">About 365 Care Solutions</h1>
@@ -58,6 +56,9 @@ export default function AboutPage() {
                                 <p>
                                     Our approach is person centred : We tailor our support around each individual's unique goals, preferences and abilities. We set out to provide specialist care for Autistic Spectrum Disorder, Complex needs, behaviours that may challenge, learning disability and physical disability in a supported living environment with the emphasis on home from home and seamless transition. Whether its daily living assistance, community participation or support with education, we empower the people we support to take control of their lives.
                                 </p>
+                                <p>
+                                    We support people whether they are moving from home, a family setting, or another service, by providing a clear and supportive pathway into our service. We work closely with individuals, families, and professionals to ensure any existing care provision is fully integrated into the transition process. This approach allows for a smooth, informed, and well-planned move, promoting continuity of care, consistency in support, and positive outcomes from day one. Our focus is on ensuring each person experiences a safe, respectful, and well-supported transition, with their needs, preferences, and goals at the centre of every decision.
+                                </p>
                             </div>
                         </div>
                         <div className="md:col-span-2">
@@ -74,7 +75,7 @@ export default function AboutPage() {
                 </div>
             </section>
             
-            {/* Our Values Section */}
+            {/* Our Values Section
             <section className="py-16 md:py-24 bg-card">
                 <div className="container mx-auto px-4">
                     <div className="text-center mb-12">
@@ -94,6 +95,42 @@ export default function AboutPage() {
                             </div>
                         ))}
                     </div>
+                </div>
+            </section> */}
+
+            {/* Mission Section */}
+            <section className="py-16 md:py-24 bg-card">
+                <div className="container mx-auto px-4">
+                    <div className="grid md:grid-cols-2 gap-12 items-center">
+                        <div className="relative overflow-hidden">
+                            <Image
+                                src="/public-transport.webp"
+                                alt="Service user on a train playing on phone"
+                                width={800}
+                                height={1200}
+                                className="w-1/4 md:w-2/3 rounded-lg object-cover shadow-xl justify-center mx-auto"
+                                data-ai-hint="Service user on a train playing on phone"
+                            />
+                        </div>
+                        <div className="text-center mb-12">
+                            <h2 className="text-3xl md:text-4xl font-bold font-headline">Our Core Values</h2>
+                            <p className="mt-2 text-lg text-muted-foreground max-w-3xl mx-auto">
+                                These values are the bedrock of our organization and guide every decision we make.
+                            </p>
+                            <div className="grid grid-cols-1 gap-8 mt-12">
+                                {values.map((value) => (
+                                    <div key={value.name} className="flex items-start gap-4">
+                                        <CheckCircle className="w-7 h-7 text-accent flex-shrink-0 mt-4" />
+                                        <div>
+                                            <h3 className="font-bold text-lg">{value.name}</h3>
+                                            <p className="text-muted-foreground">{value.description}</p>
+                                        </div>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+                    </div>
+                    
                 </div>
             </section>
 

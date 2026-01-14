@@ -17,16 +17,14 @@ export default function ContactPage() {
         <div className="bg-background">
             {/* Hero Section */}
             <section className="relative h-[40vh] md:h-[50vh] w-full bg-card">
-                {heroImage && (
                     <Image
-                        src={heroImage.imageUrl}
-                        alt={heroImage.description}
+                        src="/ErgeURCNECpebQ5z8idv--0--df2ne.webp"
+                        alt="Child with toy phone smiling"
                         fill
                         className="object-cover"
                         priority
-                        data-ai-hint={heroImage.imageHint}
+                        data-ai-hint="Child with toy phone smiling"
                     />
-                )}
                 <div className="absolute inset-0 bg-black/60" />
                 <div className="relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-4">
                     <h1 className="text-4xl md:text-6xl font-bold font-headline tracking-tight">Get In Touch</h1>

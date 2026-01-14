@@ -9,16 +9,14 @@ export default function ReferralsPage() {
         <div className="bg-background">
             {/* Hero Section */}
             <section className="relative h-[40vh] md:h-[50vh] w-full bg-card">
-                {heroImage && (
                     <Image
-                        src={heroImage.imageUrl}
-                        alt={heroImage.description}
+                        src="/down-syndrome-5961141_640.webp"
+                        alt="Downs syndrome girl playing"
                         fill
                         className="object-cover"
                         priority
-                        data-ai-hint={heroImage.imageHint}
+                        data-ai-hint="Downs syndrome girl playing"
                     />
-                )}
                 <div className="absolute inset-0 bg-black/60" />
                 <div className="relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-4">
                     <h1 className="text-4xl md:text-6xl font-bold font-headline tracking-tight">Make a Referral</h1>

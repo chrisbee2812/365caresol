@@ -21,8 +21,6 @@ import {
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { SERVICES } from '@/lib/data';
 
-const heroImage = PlaceHolderImages.find((img) => img.id === 'hero-landing');
-
 const testimonials = [
   {
     name: '',
@@ -41,16 +39,14 @@ export default function Home() {
     <div className="flex flex-col">
       {/* Hero Section */}
       <section className="relative h-[60vh] md:h-[70vh] w-full">
-        {heroImage && (
           <Image
-            src={heroImage.imageUrl}
-            alt={heroImage.description}
+            src="/pexels-cottonbro-8524643.webp"
+            alt="wheel chair user"
             fill
             className="object-cover"
             priority
-            data-ai-hint={heroImage.imageHint}
+            data-ai-hint="wheel chair"
           />
-        )}
         <div className="absolute inset-0 bg-black/50" />
         <div className="relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-4">
           <h1 className="text-4xl md:text-6xl font-bold font-headline tracking-tight">

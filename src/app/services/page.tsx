@@ -11,16 +11,14 @@ export default function ServicesPage() {
         <div className="bg-background">
             {/* Hero Section */}
             <section className="relative h-[40vh] md:h-[50vh] w-full bg-card">
-                {heroImage && (
                     <Image
-                        src={heroImage.imageUrl}
-                        alt={heroImage.description}
+                        src="/pexels-ivan-s-8127501.webp"
+                        alt="Girl in wheelchair holding hands with care giver"
                         fill
                         className="object-cover"
                         priority
-                        data-ai-hint={heroImage.imageHint}
+                        data-ai-hint="Girl in wheelchair holding hands with care giver"
                     />
-                )}
                 <div className="absolute inset-0 bg-black/60" />
                 <div className="relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-4">
                     <h1 className="text-4xl md:text-6xl font-bold font-headline tracking-tight">Our Care Services</h1>
