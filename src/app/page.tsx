@@ -125,13 +125,14 @@ export default function Home() {
       <section className="py-16 md:py-24 bg-card">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="relative aspect-video rounded-lg overflow-hidden shadow-xl">
+            <div className="relative overflow-hidden">
               <Image
-                src="https://picsum.photos/seed/mission/800/600"
-                alt="Caregiver assisting an elderly person"
-                fill
-                className="object-cover"
-                data-ai-hint="caregiver support"
+                src="/growing-veg.webp"
+                alt="Service user wearing apron carrying a basket of vegetables"
+                width={800}
+                height={1200}
+                className="w-1/4 md:w-2/3 rounded-lg object-cover shadow-xl justify-center mx-auto"
+                data-ai-hint="service user support"
               />
             </div>
             <div>
@@ -145,56 +146,56 @@ export default function Home() {
               <p className="mt-4 text-lg text-muted-foreground">
                 We don't shy away from challenges we embrace them.
               </p>
+              <div className="mt-8 grid grid-cols-1 gap-6">
+                <div className="flex items-center gap-4">
+                  <div className="bg-accent p-3 rounded-full">
+                    <HandHeart className="w-6 h-6 text-accent-foreground" />
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-lg">Person Centred Care</h3>
+                    <p className="text-muted-foreground text-sm">Every support plan is designed around individual's needs and aspirations.</p>
+                  </div>
+                </div>
+                <div className="flex items-center gap-4">
+                  <div className="bg-accent p-3 rounded-full">
+                    <Shield className="w-6 h-6 text-accent-foreground" />
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-lg">Safety and Comfort</h3>
+                    <p className="text-muted-foreground text-sm">We ensure a secure and welcoming environment where service users can thrive.</p>
+                  </div>
+                </div>
+                <div className="flex items-center gap-4">
+                  <div className="bg-accent p-3 rounded-full">
+                    <Users className="w-6 h-6 text-accent-foreground" />
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-lg">Experienced Team</h3>
+                    <p className="text-muted-foreground text-sm">Our professional staff are highly trained in supported Living and committed to providing exceptional care.</p>
+                  </div>
+                </div>
+                <div className="flex items-center gap-4">
+                  <div className="bg-accent p-3 rounded-full">
+                    <Clock8 className="w-6 h-6 text-accent-foreground" />
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-lg">24/7 Support</h3>
+                    <p className="text-muted-foreground text-sm">Our services are available round the clock because care does not stop at 5PM.</p>
+                  </div>
+                </div>
+                <div className="flex items-center gap-4">
+                  <div className="bg-accent p-3 rounded-full">
+                    <Handshake className="w-6 h-6 text-accent-foreground" />
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-lg">Community and Social Engagement</h3>
+                    <p className="text-muted-foreground text-sm">We encourage participation in local activities, hobbies and social programs to promote well being and connection.</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-            <div className="flex items-start gap-4">
-              <div className="bg-accent p-3 rounded-full">
-                <HandHeart className="w-6 h-6 text-accent-foreground" />
-              </div>
-              <div>
-                <h3 className="font-bold text-lg">Person Centred Care</h3>
-                <p className="text-muted-foreground text-sm">Every support plan is designed around individual's needs and aspirations.</p>
-              </div>
-            </div>
-            <div className="flex items-start gap-4">
-              <div className="bg-accent p-3 rounded-full">
-                <Shield className="w-6 h-6 text-accent-foreground" />
-              </div>
-              <div>
-                <h3 className="font-bold text-lg">Safety and Comfort</h3>
-                <p className="text-muted-foreground text-sm">We ensure a secure and welcoming environment where service users can thrive.</p>
-              </div>
-            </div>
-            <div className="flex items-start gap-4">
-              <div className="bg-accent p-3 rounded-full">
-                <Users className="w-6 h-6 text-accent-foreground" />
-              </div>
-              <div>
-                <h3 className="font-bold text-lg">Experienced Team</h3>
-                <p className="text-muted-foreground text-sm">Our professional staff are highly trained in supported Living and committed to providing exceptional care.</p>
-              </div>
-            </div>
-            <div className="flex items-start gap-4">
-              <div className="bg-accent p-3 rounded-full">
-                <Clock8 className="w-6 h-6 text-accent-foreground" />
-              </div>
-              <div>
-                <h3 className="font-bold text-lg">24/7 Support</h3>
-                <p className="text-muted-foreground text-sm">Our services are available round the clock because care does not stop at 5PM.</p>
-              </div>
-            </div>
-            <div className="flex items-start gap-4">
-              <div className="bg-accent p-3 rounded-full">
-                <Handshake className="w-6 h-6 text-accent-foreground" />
-              </div>
-              <div>
-                <h3 className="font-bold text-lg">Community and Social Engagement</h3>
-                <p className="text-muted-foreground text-sm">We encourage participation in local activities, hobbies and social programs to promote well being and connection.</p>
-              </div>
-            </div>
-          </div>
-          <p className="mt-8 text-lg text-muted-foreground font-bold">
+          <p className="mt-12 text-lg text-muted-foreground font-bold">
             At 365 Care solutions, we don't just provide support - we foster independence, confidence and a sense of belonging, helping our service users live life to the fullest.
           </p>
         </div>

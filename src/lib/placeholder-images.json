@@ -9,19 +9,19 @@
     {
       "id": "service-mental-health",
       "description": "A calm and supportive counseling session in a bright, airy room.",
-      "imageUrl": "https://images.unsplash.com/photo-1615737986496-1d36ad26ae51?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxjb3Vuc2VsaW5nJTIwc2Vzc2lvbnxlbnwwfHx8fDE3NjEzMDk1ODB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/preparing-veg.webp",
       "imageHint": "counseling session"
     },
     {
       "id": "service-learning-disability",
       "description": "A person engaged in a creative, hands-on learning activity with a support worker.",
-      "imageUrl": "https://images.unsplash.com/photo-1612179734693-2b5709536861?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8Y3JlYXRpdmUlMjBsZWFybmluZ3xlbnwwfHx8fDE3NjEzMDk1ODB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/taking-photo.webp",
       "imageHint": "creative learning"
     },
     {
       "id": "service-physical-disability",
       "description": "A person in a modern wheelchair smiling while participating in an adapted sport.",
-      "imageUrl": "https://images.unsplash.com/photo-1643930493780-919b76d0057c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHx3aGVlbGNoYWlyJTIwc3BvcnR8ZW58MHx8fHwxNzYxMzA5NTgwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/girl-in-a-wheel-chair.webp",
       "imageHint": "wheelchair sport"
     },
     {

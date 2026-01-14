@@ -127,7 +127,7 @@ export default function AboutPage() {
                 </div>
             </section>
 
-            {/* Management Team Section */}
+            {/* Management Team Section
             <section className="py-16 md:py-24">
                 <div className="container mx-auto px-4">
                     <div className="text-center mb-12">
@@ -187,7 +187,7 @@ export default function AboutPage() {
                         )})}
                     </div>
                 </div>
-            </section>
+            </section> */}
         </div>
     );
 }
