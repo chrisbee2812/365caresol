@@ -37,30 +37,37 @@ export default function Footer() {
             </div>
           </div>
 
-          <div className="md:col-span-3 grid grid-cols-2 md:grid-cols-3 gap-8">
-            <div>
-              <h3 className="font-semibold tracking-wider uppercase text-sm">Navigate</h3>
-              <ul className="mt-4 space-y-2">
-                <li><Link href="/about" className="text-muted-foreground hover:text-primary text-sm">About Us</Link></li>
-                <li><Link href="/services" className="text-muted-foreground hover:text-primary text-sm">Our Services</Link></li>
-                <li><Link href="/vacancies" className="text-muted-foreground hover:text-primary text-sm">Careers</Link></li>
-              </ul>
+          <div className='md:col-span-3'>
+            <div className="md:col-span-3 grid grid-cols-2 md:grid-cols-3 gap-8">
+              <div>
+                <h3 className="font-semibold tracking-wider uppercase text-sm">Navigate</h3>
+                <ul className="mt-4 space-y-2">
+                  <li><Link href="/about" className="text-muted-foreground hover:text-primary text-sm">About Us</Link></li>
+                  <li><Link href="/services" className="text-muted-foreground hover:text-primary text-sm">Our Services</Link></li>
+                  <li><Link href="/vacancies" className="text-muted-foreground hover:text-primary text-sm">Careers</Link></li>
+                </ul>
+              </div>
+              <div>
+                <h3 className="font-semibold tracking-wider uppercase text-sm">Support</h3>
+                <ul className="mt-4 space-y-2">
+                  <li><Link href="/referrals" className="text-muted-foreground hover:text-primary text-sm">Make a Referral</Link></li>
+                  <li><Link href="/contact" className="text-muted-foreground hover:text-primary text-sm">Contact Us</Link></li>
+                  <li><Link href="/faq" className="text-muted-foreground hover:text-primary text-sm">FAQs</Link></li>
+                </ul>
+              </div>
+              <div>
+                <h3 className="font-semibold tracking-wider uppercase text-sm">Legal</h3>
+                <ul className="mt-4 space-y-2">
+                  <li><Link href="/privacy-policy" className="text-muted-foreground hover:text-primary text-sm">Privacy Policy</Link></li>
+                  <li><Link href="/terms-of-service" className="text-muted-foreground hover:text-primary text-sm">Terms of Service</Link></li>
+                  <li><Link href="/cookie-policy" className="text-muted-foreground hover:text-primary text-sm">Cookie Policy</Link></li>
+                </ul>
+              </div>
             </div>
             <div>
-              <h3 className="font-semibold tracking-wider uppercase text-sm">Support</h3>
-              <ul className="mt-4 space-y-2">
-                <li><Link href="/referrals" className="text-muted-foreground hover:text-primary text-sm">Make a Referral</Link></li>
-                <li><Link href="/contact" className="text-muted-foreground hover:text-primary text-sm">Contact Us</Link></li>
-                <li><Link href="/faq" className="text-muted-foreground hover:text-primary text-sm">FAQs</Link></li>
-              </ul>
-            </div>
-            <div>
-              <h3 className="font-semibold tracking-wider uppercase text-sm">Legal</h3>
-              <ul className="mt-4 space-y-2">
-                <li><Link href="/privacy-policy" className="text-muted-foreground hover:text-primary text-sm">Privacy Policy</Link></li>
-                <li><Link href="/terms-of-service" className="text-muted-foreground hover:text-primary text-sm">Terms of Service</Link></li>
-                <li><Link href="/cookie-policy" className="text-muted-foreground hover:text-primary text-sm">Cookie Policy</Link></li>
-              </ul>
+              <p className="text-muted-foreground text-lg italic mt-4">
+                View our Care Quality Commission profile <Link href="https://www.cqc.org.uk/location/1-11210283645" target="_blank" className="text-primary underline">here</Link>.
+              </p>
             </div>
           </div>
         </div>
