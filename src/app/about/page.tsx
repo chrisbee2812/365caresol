@@ -48,7 +48,10 @@ export default function AboutPage() {
                             <h2 className="text-3xl md:text-4xl font-bold font-headline">About Us</h2>
                             <div className="mt-4 space-y-4 text-muted-foreground">
                                 <p>
-                                    Welcome to 365 Care Solutions ltd where everyday is an opportunity to make a difference. We are a specialist supported living services provider across London offering bespoke care and support for adults with learning disabilities, autism spectrum conditions, complex needs and behaviours that may challenge live independently and with dignity. 
+                                    Welcome to 365 Care Solutions ltd where everyday is an opportunity to make a difference. We are a specialist supported living services provider committed to delivering safe, compassionate, and high-quality care across London that supports people to live independently and with dignity. 
+                                </p>
+                                <p>
+                                    Our service is registered with the Care Quality Commission (CQC), the independent regulator of health and social care in England. This means we meet the required standards for safety, quality, and governance, and we are regularly inspected to ensure we continue to provide care that people can trust.
                                 </p>
                                 <p>
                                     At 365 Care Solutions ltd we believe everyone deserves the right to live a full, meaningful life - one where choice, respect and independence are at the heart of everything we do. Our support is designed around each individual's strengths, preferences and aspirations, ensuring that every person we work with has the opportunity to thrive in their own home and community. 
@@ -67,6 +70,20 @@ export default function AboutPage() {
                                     <h3 className="text-2xl font-bold font-headline mb-4">Our Mission</h3>
                                     <p className="text-muted-foreground italic">
                                         "To deliver high quality, bespoke supported living by creating safe, inclusive and nurturing environments where individuals are empowered to live fulfilling, independent lives with confidence and purpose."
+                                    </p>
+                                </CardContent>
+                            </Card>
+                            <Card className="bg-card shadow-lg mt-8">
+                                <CardContent className="p-8">
+                                    <h3 className="text-2xl font-bold font-headline mb-4">Care Quality Commission Registered</h3>
+                                    <p className="text-muted-foreground italic">
+                                        Our service is registered with the Care Quality Commission (CQC), the independent regulator of health and social care in England.
+                                    </p>
+                                    <p className="text-muted-foreground text-lg italic mt-4">
+                                        Current CQC overall rating: <strong>Good</strong>
+                                    </p>
+                                    <p className="text-muted-foreground text-lg italic mt-4">
+                                        View our CQC profile <Link href="https://www.cqc.org.uk/location/1-11210283645" target="_blank" className="text-primary underline">here</Link>.
                                     </p>
                                 </CardContent>
                             </Card>
