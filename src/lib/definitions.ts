@@ -4,8 +4,11 @@ export type Service = {
   title: string;
   imageId: string;
   description: string;
+  descriptionExtended?: string;
+  detailsHeader?: string;
   details: { title: string; content: string }[];
   icon: LucideIcon;
+  closingText?: string;
 };
 
 export type TeamMember = {

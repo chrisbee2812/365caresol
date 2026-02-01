@@ -53,7 +53,7 @@ export default function Home() {
             Compassionate Care, Every Step of the Way
           </h1>
           <p className="mt-4 max-w-2xl text-lg md:text-xl text-gray-200">
-            Providing exceptional support for individuals with mental health conditions, learning disabilities, and physical disabilities.
+            Providing exceptional support for individuals with autism, learning disabilities, physical disabilities and mental health conditions.
           </p>
           <div className="mt-8 flex flex-col sm:flex-row gap-4">
             <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground">
@@ -75,23 +75,12 @@ export default function Home() {
               We offer a range of tailored services designed to empower individuals and enhance their quality of life.
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {SERVICES.map((service, index) => {
               const serviceImage = PlaceHolderImages.find(p => p.id === service.imageId);
               return(
-              <Card key={index} className="overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col">
-                <CardHeader className="p-0">
-                  {serviceImage && (
-                    <div className="relative h-48 w-full">
-                      <Image
-                        src={serviceImage.imageUrl}
-                        alt={serviceImage.description}
-                        fill
-                        className="object-cover"
-                        data-ai-hint={serviceImage.imageHint}
-                      />
-                    </div>
-                  )}
+              <Card className="overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col">
+                <CardHeader className="p-0">                  
                   <div className="p-6">
                     <div className="flex items-center gap-4">
                        <div className="bg-accent p-3 rounded-full">
@@ -114,6 +103,7 @@ export default function Home() {
               </Card>
             )})}
           </div>
+          
         </div>
       </section>
 

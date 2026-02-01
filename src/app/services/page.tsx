@@ -54,9 +54,23 @@ export default function ServicesPage() {
                                         </div>
                                         <h2 className="text-3xl md:text-4xl font-bold font-headline">{service.title}</h2>
                                     </div>
-                                    <p className="text-lg text-muted-foreground mb-6">
-                                        {service.description}
-                                    </p>
+                                    {service.descriptionExtended ? (
+                                        <>
+                                            <p className="text-lg text-muted-foreground">
+                                                {service.description}
+                                            </p>
+                                            <p className="text-lg text-muted-foreground mb-2">
+                                                {service.descriptionExtended}
+                                            </p>
+                                        </>                                        
+                                    ) : (
+                                        <p className="text-lg text-muted-foreground mb-6">
+                                            {service.description}
+                                        </p>
+                                    )}
+                                    {service.detailsHeader && (
+                                        <h3 className="text-2xl font-semibold mb-2">{service.detailsHeader}</h3>
+                                    )}
                                     <Accordion type="single" collapsible className="w-full">
                                         {service.details.map((detail) => (
                                             <AccordionItem value={detail.title} key={detail.title}>
@@ -69,6 +83,11 @@ export default function ServicesPage() {
                                             </AccordionItem>
                                         ))}
                                     </Accordion>
+                                    {service.closingText && (
+                                        <p className="text-lg text-muted-foreground mt-6">
+                                            {service.closingText}
+                                        </p>
+                                    )}
                                 </div>
                             </div>
                         )})}

@@ -40,54 +40,58 @@ export default function VacanciesPage() {
                                 We're looking for passionate individuals to join us in our mission.
                             </p>
                         </div>
-                        <Accordion type="single" collapsible className="w-full space-y-4">
-                            {VACANCIES.map((vacancy) => (
-                                <AccordionItem value={vacancy.id} key={vacancy.id} className="border-b-0">
-                                     <AccordionTrigger className="bg-card p-6 rounded-lg shadow-md hover:no-underline hover:bg-secondary/50 transition-colors data-[state=open]:rounded-b-none data-[state=open]:shadow-lg">
-                                        <div className="text-left w-full">
-                                            <h3 className="text-xl font-bold font-headline">{vacancy.title}</h3>
-                                            <div className="flex flex-wrap items-center gap-x-4 gap-y-1 text-sm text-muted-foreground mt-2">
-                                                <div className="flex items-center gap-1.5">
-                                                    <MapPin className="h-4 w-4" />
-                                                    <span>{vacancy.location}</span>
+                        {VACANCIES.length === 0 ? (
+                            <p className="mt-2 text-4xl text-center text-muted-foreground">There are currently no vacancies available. Please check back later.</p>
+                        ) : (
+                            <Accordion type="single" collapsible className="w-full space-y-4">
+                                {VACANCIES.map((vacancy) => (
+                                    <AccordionItem value={vacancy.id} key={vacancy.id} className="border-b-0">
+                                        <AccordionTrigger className="bg-card p-6 rounded-lg shadow-md hover:no-underline hover:bg-secondary/50 transition-colors data-[state=open]:rounded-b-none data-[state=open]:shadow-lg">
+                                            <div className="text-left w-full">
+                                                <h3 className="text-xl font-bold font-headline">{vacancy.title}</h3>
+                                                <div className="flex flex-wrap items-center gap-x-4 gap-y-1 text-sm text-muted-foreground mt-2">
+                                                    <div className="flex items-center gap-1.5">
+                                                        <MapPin className="h-4 w-4" />
+                                                        <span>{vacancy.location}</span>
+                                                    </div>
+                                                    <div className="flex items-center gap-1.5">
+                                                        <Clock className="h-4 w-4" />
+                                                        <Badge variant={vacancy.type === 'Full-time' ? 'default' : 'secondary'} className="bg-accent text-accent-foreground">{vacancy.type}</Badge>
+                                                    </div>
                                                 </div>
-                                                <div className="flex items-center gap-1.5">
-                                                    <Clock className="h-4 w-4" />
-                                                    <Badge variant={vacancy.type === 'Full-time' ? 'default' : 'secondary'} className="bg-accent text-accent-foreground">{vacancy.type}</Badge>
+                                            </div>
+                                        </AccordionTrigger>
+                                        <AccordionContent className="bg-card p-6 rounded-b-lg shadow-lg -mt-2">
+                                            <div className="space-y-6">
+                                                <div>
+                                                    <h4 className="font-semibold mb-2">Job Description</h4>
+                                                    {vacancy.description.map((p, i) => <p key={i} className="text-muted-foreground">{p}</p>)}
                                                 </div>
+                                                <div>
+                                                    <h4 className="font-semibold mb-2">Key Responsibilities</h4>
+                                                    <ul className="list-disc list-inside space-y-1 text-muted-foreground">
+                                                        {vacancy.responsibilities.map((item, i) => <li key={i}>{item}</li>)}
+                                                    </ul>
+                                                </div>
+                                                <div>
+                                                    <h4 className="font-semibold mb-2">Qualifications & Skills</h4>
+                                                    <ul className="list-disc list-inside space-y-1 text-muted-foreground">
+                                                        {vacancy.qualifications.map((item, i) => <li key={i}>{item}</li>)}
+                                                    </ul>
+                                                </div>
+                                                <Button asChild>
+                                                    <a href={`mailto:careers@365caresolutions.com?subject=Application for ${vacancy.title}`}>
+                                                        Apply Now <ArrowRight className="ml-2 h-4 w-4" />
+                                                    </a>
+                                                </Button>
                                             </div>
-                                        </div>
-                                    </AccordionTrigger>
-                                    <AccordionContent className="bg-card p-6 rounded-b-lg shadow-lg -mt-2">
-                                        <div className="space-y-6">
-                                            <div>
-                                                <h4 className="font-semibold mb-2">Job Description</h4>
-                                                {vacancy.description.map((p, i) => <p key={i} className="text-muted-foreground">{p}</p>)}
-                                            </div>
-                                            <div>
-                                                <h4 className="font-semibold mb-2">Key Responsibilities</h4>
-                                                <ul className="list-disc list-inside space-y-1 text-muted-foreground">
-                                                    {vacancy.responsibilities.map((item, i) => <li key={i}>{item}</li>)}
-                                                </ul>
-                                            </div>
-                                             <div>
-                                                <h4 className="font-semibold mb-2">Qualifications & Skills</h4>
-                                                <ul className="list-disc list-inside space-y-1 text-muted-foreground">
-                                                    {vacancy.qualifications.map((item, i) => <li key={i}>{item}</li>)}
-                                                </ul>
-                                            </div>
-                                            <Button asChild>
-                                                <a href={`mailto:careers@365caresolutions.com?subject=Application for ${vacancy.title}`}>
-                                                    Apply Now <ArrowRight className="ml-2 h-4 w-4" />
-                                                </a>
-                                            </Button>
-                                        </div>
-                                    </AccordionContent>
-                                </AccordionItem>
-                            ))}
-                        </Accordion>
+                                        </AccordionContent>
+                                    </AccordionItem>
+                                ))}
+                            </Accordion>
+                        )}
                          <div className="text-center mt-12">
-                            <p className="text-muted-foreground">Don't see a suitable role? We're always keen to hear from talented individuals.</p>
+                            <p className="mt-2 text-lg text-muted-foreground">Don't see a suitable role? We're always keen to hear from talented individuals.</p>
                             <Button variant="link" asChild className="text-primary text-lg mt-2">
                                 <a href="mailto:careers@365caresolutions.com?subject=General Career Inquiry">Send us your CV</a>
                             </Button>

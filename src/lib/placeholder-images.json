@@ -71,6 +71,12 @@
       "description": "A stylized image of various communication icons like email, phone, and chat bubbles.",
       "imageUrl": "https://images.unsplash.com/photo-1758786977080-a5e60a3f843c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxjb21tdW5pY2F0aW9uJTIwaWNvbnN8ZW58MHx8fHwxNzYxMzA5NTgwfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "communication icons"
+    },
+    {
+      "id": "service-pbs",
+      "description": "A carer holding hands with a person they support.",
+      "imageUrl": "/pexels-ivan-s-8127501.webp",
+      "imageHint": "carer and person support"
     }
   ]
 }
