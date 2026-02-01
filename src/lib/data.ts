@@ -67,7 +67,7 @@ export const SERVICES: Service[] = [
     imageId: "service-pbs",
     icon: HeartHandshake,
     description: "All our services are supported by a qualified Positive Behaviour Support (PBS) Specialist who works closely with the people we support, their families, and our staff team.",
-    descriptionExtended: "The PBS Specialist focuses on understanding the reasons behind behaviours that may be challenging and developing person-centred, proactive support strategies. These stragtegies aim to improve quality of life, increase independence, and reduce the need for restrictive practices.",
+    descriptionExtended: "The PBS Specialist focuses on understanding the reasons behind behaviours that may be challenging and developing person-centred, proactive support strategies. These strategies aim to improve quality of life, increase independence, and reduce the need for restrictive practices.",
     detailsHeader: "Our PBS approach is underpinned by the following principles:",
     details: [
       {
