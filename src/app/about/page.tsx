@@ -157,10 +157,10 @@ export default function AboutPage() {
                     <h2 className="text-3xl md:text-4xl font-bold font-headline">Our Team</h2>
                     <div className="mt-4 space-y-4 text-muted-foreground">
                         <p>
-                            Our team is made up of compassionate, trained professionals who are passionate about making a difference. We are a team made up of two registered mental health nurses, learning disability expertise, manager and support workers. Every member of our staff shares a commitment to delivering high quality person centred care that promotes growth, safety and independence.
+                            Our team is made up of compassionate, trained professionals who are passionate about making a difference. We are a team made up of two registered mental health nurses, learning disability expertise, CQC registered manager and support workers. Every member of our staff shares a commitment to delivering high quality person centred care that promotes growth, safety and independence.
                         </p>
                         <p>
-                            Our dedicated professionals brings compassion, skill and experience to every aspect of care. We work closely with families, local authorities and multidisciplinary professionals to ensure a consistent, holistic approach that puts the individual first. At 365 Care solutions ltd, we accept challenges as part of the job - approaching every situation with patience, understanding and a belief that progress is always possible.
+                            Our dedicated professionals bring compassion, skill and experience to every aspect of care. We work closely with families, local authorities and multidisciplinary professionals to ensure a consistent, holistic approach that puts the individual first. At 365 Care solutions ltd, we accept challenges as part of the job - approaching every situation with patience, understanding and a belief that progress is always possible.
                         </p>
                     </div>
                 </div>

@@ -23,6 +23,7 @@ import { useToast } from "@/hooks/use-toast";
 import { Loader2 } from "lucide-react";
 
 const supportNeeds = [
+  { id: "autism", label: "Autism Support" },
   { id: "mental-health", label: "Mental Health Support" },
   { id: "learning-disability", label: "Learning Disability Support" },
   { id: "physical-disability", label: "Physical Disability Support" },
