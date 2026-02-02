@@ -3,26 +3,6 @@ import { Brain, Puzzle, Accessibility, HeartHandshake } from 'lucide-react';
 
 export const SERVICES: Service[] = [
   {
-    title: "Mental Health Support",
-    imageId: "service-mental-health",
-    icon: Brain,
-    description: "Our mental health services provide compassionate, person-centered support for individuals facing challenges such as depression, anxiety, schizophrenia, and personality disorders.",
-    details: [
-      {
-        title: "Personalized Support Plans",
-        content: "We work with each individual to create a support plan that addresses their unique needs, promoting recovery and well-being."
-      },
-      {
-        title: "Therapeutic Activities",
-        content: "Engaging in structured activities designed to build coping skills, improve social interaction, and enhance self-esteem."
-      },
-      {
-        title: "24/7 On-Call Support",
-        content: "Peace of mind with around-the-clock access to support for crises and emergencies."
-      }
-    ]
-  },
-  {
     title: "Learning Disabilities",
     imageId: "service-learning-disability",
     icon: Puzzle,
@@ -42,6 +22,26 @@ export const SERVICES: Service[] = [
       }
     ]
   },
+  {
+    title: "Mental Health Support",
+    imageId: "service-mental-health",
+    icon: Brain,
+    description: "Our mental health services provide compassionate, person-centered support for individuals facing challenges such as depression, anxiety, schizophrenia, and personality disorders.",
+    details: [
+      {
+        title: "Personalized Support Plans",
+        content: "We work with each individual to create a support plan that addresses their unique needs, promoting recovery and well-being."
+      },
+      {
+        title: "Therapeutic Activities",
+        content: "Engaging in structured activities designed to build coping skills, improve social interaction, and enhance self-esteem."
+      },
+      {
+        title: "24/7 On-Call Support",
+        content: "Peace of mind with around-the-clock access to support for crises and emergencies."
+      }
+    ]
+  },  
   {
     title: "Physical Disabilities",
     imageId: "service-physical-disability",

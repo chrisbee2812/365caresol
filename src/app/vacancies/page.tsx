@@ -80,7 +80,7 @@ export default function VacanciesPage() {
                                                     </ul>
                                                 </div>
                                                 <Button asChild>
-                                                    <a href={`mailto:careers@365caresolutions.com?subject=Application for ${vacancy.title}`}>
+                                                    <a href={`mailto:enquiries@365caresolutions.co.uk?subject=Application for ${vacancy.title}`}>
                                                         Apply Now <ArrowRight className="ml-2 h-4 w-4" />
                                                     </a>
                                                 </Button>
@@ -93,7 +93,7 @@ export default function VacanciesPage() {
                          <div className="text-center mt-12">
                             <p className="mt-2 text-lg text-muted-foreground">Don't see a suitable role? We're always keen to hear from talented individuals.</p>
                             <Button variant="link" asChild className="text-primary text-lg mt-2">
-                                <a href="mailto:careers@365caresolutions.com?subject=General Career Inquiry">Send us your CV</a>
+                                <a href="mailto:enquiries@365caresolutions.co.uk?subject=General Career Inquiry">Send us your CV</a>
                             </Button>
                         </div>
                     </div>
