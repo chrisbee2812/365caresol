@@ -15,7 +15,7 @@
     {
       "id": "service-learning-disability",
       "description": "A person engaged in a creative, hands-on learning activity with a support worker.",
-      "imageUrl": "/taking-photo.webp",
+      "imageUrl": "/support-worker-job-in-uk.webp",
       "imageHint": "creative learning"
     },
     {
@@ -77,6 +77,12 @@
       "description": "A carer holding hands with a person they support.",
       "imageUrl": "/pexels-ivan-s-8127501.webp",
       "imageHint": "carer and person support"
+    },
+    {
+      "id": "service-autism",
+      "description": "An autistic person engaging in photography.",
+      "imageUrl": "/taking-photo.webp",
+      "imageHint": "autistic photography"
     }
   ]
 }

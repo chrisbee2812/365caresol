@@ -4,9 +4,9 @@ export type Service = {
   title: string;
   imageId: string;
   description: string;
-  descriptionExtended?: string;
+  descriptionExtended?: { index: number; content: string }[];
   detailsHeader?: string;
-  details: { title: string; content: string }[];
+  details?: { title: string; content: string }[];
   icon: LucideIcon;
   closingText?: string;
 };

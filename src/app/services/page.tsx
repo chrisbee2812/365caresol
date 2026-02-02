@@ -59,9 +59,11 @@ export default function ServicesPage() {
                                             <p className="text-lg text-muted-foreground">
                                                 {service.description}
                                             </p>
-                                            <p className="text-lg text-muted-foreground mb-2">
-                                                {service.descriptionExtended}
-                                            </p>
+                                            {service.descriptionExtended.map((detail, index) => (
+                                                <p key={index} className="text-lg text-muted-foreground mt-4">
+                                                    {detail.content}
+                                                </p>
+                                            ))}
                                         </>                                        
                                     ) : (
                                         <p className="text-lg text-muted-foreground mb-6">
@@ -71,6 +73,7 @@ export default function ServicesPage() {
                                     {service.detailsHeader && (
                                         <h3 className="text-2xl font-semibold mb-2">{service.detailsHeader}</h3>
                                     )}
+                                    {service.details && (
                                     <Accordion type="single" collapsible className="w-full">
                                         {service.details.map((detail) => (
                                             <AccordionItem value={detail.title} key={detail.title}>
@@ -83,6 +86,7 @@ export default function ServicesPage() {
                                             </AccordionItem>
                                         ))}
                                     </Accordion>
+                                    )}
                                     {service.closingText && (
                                         <p className="text-lg text-muted-foreground mt-6">
                                             {service.closingText}

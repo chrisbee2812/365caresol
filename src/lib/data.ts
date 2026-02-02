@@ -3,6 +3,32 @@ import { Brain, Puzzle, Accessibility, HeartHandshake } from 'lucide-react';
 
 export const SERVICES: Service[] = [
   {
+    title: "Autism Support",
+    imageId: "service-autism",
+    icon: HeartHandshake,
+    description: "We provide high-quality supported living services for autistic adults, enabling people to live independently in their own homes while receiving support that is safe, effective, caring, responsive, and well-led.",
+    detailsHeader: "Our approach to Autism is underpinned by the following:",
+    details: [
+      {
+        title: "The Service",
+        content: "Our service is built around a person-centred approach. We work in partnership with individuals to understand their needs, preferences, abilities, and aspirations. Support is tailored to each person and regularly reviewed to ensure it remains appropriate, meaningful, and outcomes-focused."
+      },
+      {
+        title: "Our Commitment",
+        content: "We are committed to promoting choice, control, and independence. Individuals are actively involved in decisions about their care and support, including how, when, and by whom support is delivered. We respect individual rights, privacy, dignity, and cultural needs at all times."
+      },
+      {
+        title: "The Staff",
+        content: "Our staff are trained to support autistic people in a respectful, consistent, and compassionate manner. We focus on positive communication, emotional wellbeing, and enabling people to develop daily living skills, access the community, and maintain relationships that matter to them."
+      },
+      {
+        title: "Extended Collaboration",
+        content: "We work closely with families, commissioners, and other professionals to ensure coordinated and effective support. Safeguarding is central to our practice, and we are committed to maintaining safe environments where individuals feel secure, valued, and listened to."
+      }
+    ],
+    closingText: "Through continuous learning, reflection, and quality monitoring, we strive to improve outcomes and provide support that helps people live fulfilling and meaningful lives."
+  },
+  {
     title: "Learning Disabilities",
     imageId: "service-learning-disability",
     icon: Puzzle,
@@ -67,7 +93,16 @@ export const SERVICES: Service[] = [
     imageId: "service-pbs",
     icon: HeartHandshake,
     description: "All our services are supported by a qualified Positive Behaviour Support (PBS) Specialist who works closely with the people we support, their families, and our staff team.",
-    descriptionExtended: "The PBS Specialist focuses on understanding the reasons behind behaviours that may be challenging and developing person-centred, proactive support strategies. These strategies aim to improve quality of life, increase independence, and reduce the need for restrictive practices.",
+    descriptionExtended: [
+      {
+        index: 0,
+        content: "The PBS Specialist focuses on understanding the reasons behind behaviours that may be challenging and developing person-centred, proactive support strategies."
+      },
+      {
+        index: 1,
+        content: "These strategies aim to improve quality of life, increase independence, and reduce the need for restrictive practices."
+      }
+    ],
     detailsHeader: "Our PBS approach is underpinned by the following principles:",
     details: [
       {
