@@ -7,7 +7,6 @@ import { Card } from "@/components/ui/card";
 const heroImage = PlaceHolderImages.find((img) => img.id === 'contact-hero');
 
 const contactDetails = [
-  { icon: Phone, title: "Phone", content: "+44 7508 385 190", href: "tel:+447508385190" },
   { icon: Phone, title: "Phone", content: "+44 7961 716 883", href: "tel:+447961716883" },
   { icon: Mail, title: "Email", content: "enquiries@365caresolutions.co.uk", href: "mailto:enquiries@365caresolutions.co.uk" },
   { icon: MapPin, title: "Address", content: "Unit 156, 111 Power Rd, Chiswick, London, W4 5PY", href: "#" },

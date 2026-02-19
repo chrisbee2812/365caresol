@@ -26,10 +26,7 @@ export default function Header() {
       <div className="bg-muted/50 border-b">
         <div className="container mx-auto flex h-10 items-center justify-end px-4 text-sm">
             <div className="hidden md:flex items-center gap-6 text-muted-foreground">
-                 <a href="tel:+447508385190" className="flex items-center gap-2 hover:text-primary transition-colors">
-                    <Phone className="h-4 w-4" />
-                    <span>+44 7508 385 190</span>
-                </a>
+                 
                 <a href="tel:+447961716883" className="flex items-center gap-2 hover:text-primary transition-colors">
                     <Phone className="h-4 w-4" />
                     <span>+44 7961 716 883</span>
