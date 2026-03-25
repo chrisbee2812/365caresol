@@ -43,15 +43,36 @@ export default function ContactForm() {
   async function onSubmit(values: z.infer<typeof formSchema>) {
     setIsSubmitting(true);
     // Simulate API call
-    await new Promise(resolve => setTimeout(resolve, 1500));
+    // await new Promise(resolve => setTimeout(resolve, 1500));
+    const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json",
+            Accept: "application/json",
+        },
+        body: JSON.stringify({
+            access_key: "5dc83c02-0097-4906-8afa-3a448486fea7",
+            subject: values.subject,
+            name: values.name,
+            email: values.email,
+            message: values.message,
+        }),
+    });
+    const result = await response.json();
     setIsSubmitting(false);
 
-    console.log(values);
-
-    toast({
-      title: "Message Sent!",
-      description: "Thank you for contacting us. We will get back to you soon.",
-    });
+    if (result.success) {
+      toast({
+        title: "Message Sent!",
+        description: "Thank you for contacting us. We will get back to you shortly.",
+      });
+    } else {
+      toast({
+        title: "Error",
+        description: "There was an error sending your message. Please try again later.",
+        variant: "destructive",
+      });
+    }
     form.reset();
   }
 
