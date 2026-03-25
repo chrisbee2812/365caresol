@@ -79,7 +79,7 @@ export default function Home() {
             {SERVICES.map((service, index) => {
               const serviceImage = PlaceHolderImages.find(p => p.id === service.imageId);
               return(
-              <Card className="overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col">
+              <Card key={index} className="overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col">
                 <CardHeader className="p-0">                  
                   <div className="p-6">
                     <div className="flex items-center gap-4">
