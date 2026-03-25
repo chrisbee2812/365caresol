@@ -63,16 +63,49 @@ export default function ReferralsForm() {
   async function onSubmit(values: z.infer<typeof formSchema>) {
     setIsSubmitting(true);
     // Simulate API call
-    await new Promise(resolve => setTimeout(resolve, 2000));
+    // await new Promise(resolve => setTimeout(resolve, 2000));
+    const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json",
+            Accept: "application/json",
+        },
+        body: JSON.stringify({
+            access_key: "5dc83c02-0097-4906-8afa-3a448486fea7",
+            ReferrerName: values.referrerName,
+            ReferrerEmail: values.referrerEmail,
+            ReferrerPhone: values.referrerPhone,
+            ReferringBody: values.referringBody,
+            ClientName: values.clientName,
+            ClientDob: values.clientDob,
+            SupportNeeds: values.supportNeeds,
+            AdditionalInfo: values.additionalInfo,
+        }),
+    });
+    const result = await response.json();
     setIsSubmitting(false);
 
     console.log(values);
 
-    toast({
-      title: "Referral Submitted Successfully!",
-      description: "Thank you. Our team will review the information and be in touch shortly.",
-      variant: "default",
-    });
+    // toast({
+    //   title: "Referral Submitted Successfully!",
+    //   description: "Thank you. Our team will review the information and be in touch shortly.",
+    //   variant: "default",
+    // });
+    // form.reset();
+    if (result.success) {
+      toast({
+        title: "Referral Submitted Successfully!",
+        description: "Thank you. Our team will review the information and be in touch shortly.",
+        variant: "default",
+      });
+    } else {
+      toast({
+        title: "Error",
+        description: "There was an error sending your message. Please try again later.",
+        variant: "destructive",
+      });
+    }
     form.reset();
   }
 
