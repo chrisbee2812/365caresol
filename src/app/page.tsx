@@ -186,9 +186,24 @@ export default function Home() {
           </p>
         </div>
       </section>
-      
-      {/* Testimonials Section */}
+
+      {/* Environment Section */}
       <section className="py-16 md:py-24 bg-background">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold font-headline">Environmental Care</h2>
+            <p className="mt-2 text-lg text-muted-foreground max-w-3xl mx-auto">
+              At 365 Care Solutions, we are committed to environmental sustainability and reducing our carbon footprint. We are implementing eco-friendly practices across our services, including energy-efficient facilities, waste reduction initiatives, and promoting greener transportation options for our staff. We believe that caring for the environment is an integral part of providing compassionate care and creating a better future for everyone.
+            </p>
+            <p className="mt-4 text-lg text-muted-foreground max-w-3xl mx-auto">
+              Please read about our current carbon reduction plan here: <a href="./Carbon-Reduction-Plan-365-Care-Solutions-Limited.pdf/" target="_blank" className="text-primary hover:underline">Carbon Reduction Plan</a>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials Section */}
+      <section className="py-16 md:py-24 bg-card">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold font-headline">What People Say About Us</h2>
