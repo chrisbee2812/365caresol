@@ -181,7 +181,7 @@ export default function AboutPage() {
                 </div>
             </section>
 
-            {/* Management Team Section
+            Management Team Section
             <section className="py-16 md:py-24">
                 <div className="container mx-auto px-4">
                     <div className="text-center mb-12">
@@ -219,6 +219,7 @@ export default function AboutPage() {
                                                     <DialogTitle className="text-2xl font-headline">{member.name}</DialogTitle>
                                                     <p className="text-primary text-md">{member.role}</p>
                                                 </DialogHeader>
+                                                <p className="text-muted-foreground mt-4 text-sm">{member.qualifications.join(', ')}</p>
                                                 <p className="text-muted-foreground mt-4 text-sm">{member.bio}</p>
                                                 <div className="mt-4 flex items-center gap-4">
                                                     {member.socials.linkedin && (
@@ -241,7 +242,7 @@ export default function AboutPage() {
                         )})}
                     </div>
                 </div>
-            </section> */}
+            </section>
         </div>
     );
 }

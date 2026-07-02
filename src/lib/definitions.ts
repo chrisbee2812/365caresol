@@ -20,6 +20,7 @@ export type TeamMember = {
     linkedin?: string;
     twitter?: string;
   };
+  qualifications: string[];
 };
 
 export type Vacancy = {

@@ -128,25 +128,44 @@ export const SERVICES: Service[] = [
 
 export const TEAM_MEMBERS: TeamMember[] = [
   { 
-    name: 'Vicky Hall', 
+    name: 'Vicky Hall RGN', 
     role: 'Chief Executive Officer', 
     imageId: 'team-member-1', 
-    bio: 'Vicky Hall Care Sector Start-ups; Turnarounds; Change Programmes Senior Healthcare Director specialising in mental healthcare, with over 20 years’ experience at ‘C’ level managing 24/7 therapeutic environments for service-users with complex needs A wealth of experience in both the public and private sectors, including private equity initiatives, leading start-ups & turnarounds, engaging with CCGs, driving up occupancy, and improving reputational standing, including CQC ratings. A qualified nurse (degree level) and experienced manager who combines advanced clinical knowledge of the care requirements for adult male and female service-users diagnosed variously with: dementia, learning disabilities (also linked to alcohol & substance abuse), eating disorders, autism, etc, with clear and objective analysis of requirements for heightening staff performance, improving regulatory compliance (all disciplines), increasing profitability and ROI, and putting in place lasting legacies of process and care improvement.',
-    socials: { linkedin: '#', twitter: '#' } 
+    bio: 'A Chief Executive with 30 years career experience supporting clients with complex needs in residential care and supported living. sSecialising in forensic mental health, learning disabilities and autism.',
+    socials: {  },
+    qualifications: [
+      
+    ]
   },
   { 
-    name: 'Craton Machimbidza', 
+    name: 'Craton Machimbidza RMN', 
     role: 'Human Resources Director', 
     imageId: 'team-member-2',
-    bio: 'Craton Machimbidza is a highly skilled and experienced registered mental health nurse with a wide range of experience and skills developed over an expansive period of more than 15 years .He has worked in various mental health settings which care for people with various mental health diagnosis and these include Acute Mental health, Forensic mental health and Psychiatric intensive care Unit. Craton Machimbidza is driven in his career by an extensive passion to deliver excellent and quality care to all the people under his care . He has consistently demonstrated this attribute in all the various capacities that he has worked in both as a staff nurse and as a ward manager. Craton Machimbidza has a broad and a wealthy of experience of working with people with various mental health diagnosis these include people suffering from psychosis, depression, Emotionally Unstable Personality disorder, Post traumatic Personality disorder and Autistic spectrum disorder. His expertise and ability to provide care to this vulnerable group of people is underpinned by his academic achievements in the relevant field of study. He has achieved a Bsc (hons) in Nursing Studies ,Diploma of Higher education in Mental Health Nursing and a Certificate in Mentorship Practice for Healthcare Professionals.He also holds a Diploma in Education.Craton Machimbidza has worked with various mental health organisations and NHS Trusts in all his entire career during which he has consistently demonstrated a high degree professionalism in his work and maintained a reputation of upholding high standards in his work.',
-    socials: { linkedin: '#', twitter: '#' }
+    bio: 'Joint Clinical Lead with a wealth of clinical experience in the NHS and private sector, gained in secure, semi secure and community based provider groups focused throughout on person centred care and rehabilitation.',
+    socials: {  },
+    qualifications: [
+      
+    ]
   },
   { 
-    name: 'Elias Machimbidza', 
+    name: 'Elias Machimbidza RMN', 
     role: 'Finance Director', 
     imageId: 'team-member-3',
-    bio: 'Elias Machimbidza has worked in Health and Social Care with adults since 2006 and have been working at senior level since 2012 with Bachelor of Nursing Degree in Mental Health and NVQ Level 5 in leadership and management. Currently he is the Financial Director of 365 care solutions Ltd a Supported living provider. He has a great deal of experience in various care settings. Elias is very passionate about adult social care and have a particular interest in working with people with challenging behaviours supporting them to achieve good outcomes through personalised care and positive behaviour support.',
-    socials: { linkedin: '#', twitter: '#' }
+    bio: 'A Chief Joint Clinical Lead with Wealth Financial Management and Clinical Governance Negotiations and business development providing value for money. Fostering strong relationships with stakeholders and commissioning bodies.',
+    socials: {  },
+    qualifications: [
+      'NVQ Level 5 in Leadership and Management in Care'
+    ]
+  },
+  { 
+    name: 'TINA WELCH', 
+    role: 'Registered Manager', 
+    imageId: 'team-member-4',
+    bio: 'An experienced Registered Manager specialising in supported living services for individuals with autism, learning disabilities and complex needs. Skilled in Positive Behaviour Support, safeguarding, service development and compliance, with a commitment to delivering high quality, person centred care and positive outcomes through effective partnership working with families, professionals and commissioners.',
+    socials: {  },
+    qualifications: [
+      'Level 5 Diploma in Health and Social Care Management'
+    ]
   },
 ];
 
