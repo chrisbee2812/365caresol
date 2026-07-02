@@ -181,7 +181,7 @@ export default function AboutPage() {
                 </div>
             </section>
 
-            Management Team Section
+            {/* Management Team Section */}
             <section className="py-16 md:py-24">
                 <div className="container mx-auto px-4">
                     <div className="text-center mb-12">
@@ -200,7 +200,7 @@ export default function AboutPage() {
                                             <CardContent className="p-6">
                                                 <Avatar className="w-32 h-32 mx-auto mb-4 border-4 border-accent">
                                                     {memberImage && <AvatarImage src={memberImage.imageUrl} alt={member.name} data-ai-hint={memberImage.imageHint} />}
-                                                    <AvatarFallback>{member.name.charAt(0)}</AvatarFallback>
+                                                    <AvatarFallback>{member.name}</AvatarFallback>
                                                 </Avatar>
                                                 <h3 className="font-bold text-lg font-headline">{member.name}</h3>
                                                 <p className="text-primary">{member.role}</p>
